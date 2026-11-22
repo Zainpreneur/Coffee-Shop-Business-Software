@@ -1,5 +1,30 @@
 # ☕ Brew Base — Coffee Shop Business Software
 
+> **Now available as a single Next.js App Router application.** The original
+> Express + Vite implementation is kept under `backend/` and `frontend/` for
+> reference; the Next.js port lives in `app/`, `components/`, `lib/` and
+> `scripts/` at the repository root.
+
+## Next.js version (recommended)
+
+Requires Node.js 20.9+.
+
+```bash
+cp .env.example .env.local
+npm install
+npm run seed
+npm run dev
+```
+
+Open http://localhost:3000 and sign in with any of the demo accounts below
+(password: `password123`). The app uses one SQLite file and httpOnly session
+cookies — no separate backend process is needed.
+
+```bash
+npm run build && npm start   # production
+npm run typecheck            # TypeScript check
+```
+
 A full-stack business management suite for a coffee shop: point of sale, menu &
 recipe management, inventory tracking with automatic stock deduction, order
 history, customer loyalty, staff accounts, and a reporting dashboard.

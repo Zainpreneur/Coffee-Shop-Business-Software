@@ -1,7 +1,11 @@
 node_modules/
 dist/
 build/
+.next/
+data/
 .env
+.env*.local
+*.tsbuildinfo
 *.log
 backend/data/
 *.db
